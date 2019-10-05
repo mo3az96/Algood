@@ -1,0 +1,38 @@
+body {
+    font-family: itc;
+    height: 5000px;
+
+    &::-webkit-scrollbar {
+        background-color: #f7f7f7;
+        width: 8px;
+        height: 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba(#eec669, 0.5);
+
+        &:hover {
+            background-color: rgba(#eec669, 1);
+        }
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(#eec669, 0.75) #f7f7f7;
+}
+
+.fixall {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+}
