@@ -180,6 +180,12 @@ html {
   padding: 0 32px;
   font-size: 14px;
   color: #a1a1a1;
+  text-align: right;
+}
+.search .search-input::placeholder {
+  font-size: 14px;
+  color: #a1a1a1;
+  text-align: right;
 }
 @media (max-width: 767px) {
   .search .search-input {
@@ -257,10 +263,12 @@ html {
   font-family: itc-md;
   color: #cccccc;
   font-size: 16px;
+  text-align: right;
 }
 .newsletter-sec .newsletter-input::placeholder {
   color: #cccccc;
   font-size: 16px;
+  text-align: right;
 }
 .newsletter-sec .newsletter-input:focus {
   border-color: #e3a30d;
@@ -325,6 +333,42 @@ html {
 .newsletter-sec .newsletter-btn:hover:before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
+}
+
+html[dir=ltr] .search {
+  left: unset;
+  right: 67px;
+}
+@media (max-width: 767px) {
+  html[dir=ltr] .search {
+    left: unset;
+    left: 0;
+    width: 100%;
+  }
+}
+html[dir=ltr] .search .search-input {
+  text-align: left;
+}
+html[dir=ltr] .search .search-input::placeholder {
+  text-align: left;
+}
+html[dir=ltr] .search .searchbtn {
+  left: unset;
+  right: 20px;
+}
+
+html[dir=ltr] .newsletter-sec .newsletter-input {
+  text-align: left;
+}
+html[dir=ltr] .newsletter-sec .newsletter-input::placeholder {
+  text-align: left;
+}
+html[dir=ltr] .newsletter-sec .newsletter-btn {
+  right: 15px;
+  left: unset;
+}
+html[dir=ltr] .newsletter-sec .newsletter-btn::after {
+  content: "";
 }
 
 @media (max-width: 991px) {
@@ -425,7 +469,6 @@ html {
 }
 
 .products-ul {
-  width: 169px;
   right: -22px;
   border-radius: 8px;
   position: absolute;
@@ -490,6 +533,49 @@ html {
 .products-ul .nav-link {
   font-size: 14px;
   font-family: itc;
+}
+
+@media (max-width: 991px) {
+  html[dir=ltr] .header-sec .xs-nav {
+    left: 0;
+    right: unset;
+  }
+}
+html[dir=ltr] .header-sec .nav-links {
+  width: 365px;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .header-sec .nav-links {
+    width: 280px;
+  }
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .header-sec .nav-links .lnr {
+    left: unset;
+    right: 25px;
+  }
+}
+html[dir=ltr] .header-sec .link-li {
+  margin-left: 0;
+  margin-right: 22px;
+}
+html[dir=ltr] .header-sec .link-li:last-of-type {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html[dir=ltr] .products-ul {
+  right: unset;
+  left: -22px;
+  width: 180px;
+}
+html[dir=ltr] .products-ul .link-li {
+  margin: 0;
+  margin-top: 3px;
+}
+html[dir=ltr] .products-ul::before {
+  right: unset;
+  left: 21px;
 }
 
 .main-slider-sec {
@@ -830,8 +916,6 @@ html {
   background-color: #fff;
   background-color: rgba(68, 9, 3, 0.102);
   position: absolute;
-  left: 715px;
-  top: 1183px;
   width: 100%;
   height: 100%;
   top: 0;
@@ -940,6 +1024,11 @@ html {
 }
 .product:hover .product-name {
   color: #e3a30d;
+}
+
+.product .mo-addto-icon.mo-addto-cart span {
+  margin-left: 0;
+  margin-right: 7px;
 }
 
 .moaccordion {
@@ -1100,6 +1189,35 @@ html[dir=ltr] .moaccordion:after {
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+html[dir=ltr] .header-sec .lang {
+  left: unset;
+  right: 0;
+}
+html[dir=ltr] .header-sec .mo-user-nav {
+  width: 365px;
+}
+@media (max-width: 991px) {
+  html[dir=ltr] .header-sec .mo-user-nav {
+    width: 100%;
+  }
+}
+html[dir=ltr] .header-sec .mo-user-icon {
+  margin-right: 0;
+  margin-left: 28px;
+}
+html[dir=ltr] .header-sec .mo-user-icon:first-of-type {
+  margin-right: 0;
+  margin-left: 0;
+}
+html[dir=ltr] .header-sec .mo-log-icon .log {
+  margin-right: 0;
+  margin-left: 8px;
+}
+html[dir=ltr] .header-sec .mo-search-icon {
+  margin-right: 0 !important;
+  margin-left: 28px !important;
 }
 
 .banner-sec {
@@ -1269,6 +1387,19 @@ html[dir=ltr] .moaccordion:after {
 }
 .copyrights .tasawk img {
   margin: 0 6px;
+}
+
+html[dir=ltr] .footer-sec .nav-foot-link:hover {
+  -webkit-transform: translateX(8px);
+  transform: translateX(8px);
+}
+html[dir=ltr] .footer-sec .social-link {
+  margin-left: 0;
+  margin-right: 8px;
+}
+html[dir=ltr] .footer-sec .social-link:last-of-type {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

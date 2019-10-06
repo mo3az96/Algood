@@ -381,8 +381,6 @@
         background-color: #fff;
         background-color: rgba($maincolor, 0.102);
         position: absolute;
-        left: 715px;
-        top: 1183px;
         width: 100%;
         height: 100%;
         top: 0;
@@ -506,4 +504,22 @@
             color: $seccolor;
         }
     }
+}
+
+
+.product {
+    .mo-addto-icon {
+        &.mo-addto-cart {
+            span {
+                margin-left: 0;
+                margin-right: 7px;
+            }
+        }
+    }
+
+
+
+
+
+
 }

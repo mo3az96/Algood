@@ -17,11 +17,13 @@ $(document).ready(function () {
         $(".xs-nav").toggle()
         $(".nav-links").addClass("inscreen")
         $(".nav-links").removeClass("outscreen")
+        $('body, html').css("overflow", "hidden");
     });
     $('.xs-nav').click(function () {
         $(".xs-nav").fadeOut(700)
         $(".nav-links").addClass("outscreen")
         $(".nav-links").removeClass("inscreen")
+        $('body, html').css("overflow", "auto");
     });
     $(".nav-links").click(function (e) {
         e.stopPropagation();
@@ -30,6 +32,7 @@ $(document).ready(function () {
         $(".xs-nav").fadeOut(700)
         $(".nav-links").addClass("outscreen")
         $(".nav-links").removeClass("inscreen")
+        $('body, html').css("overflow", "auto");
     });
 
     // Main Slider

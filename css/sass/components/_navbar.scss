@@ -102,7 +102,7 @@
 }
 
 .products-ul {
-    width: 169px;
+
     right: -22px;
     border-radius: 8px;
     position: absolute;
@@ -165,5 +165,57 @@
     .nav-link {
         font-size: 14px;
         font-family: itc;
+    }
+}
+
+
+html[dir="ltr"] .header-sec {
+    .xs-nav {
+        @include small {
+            left: 0;
+            right: unset;
+        }
+    }
+
+    .nav-links {
+        width: 365px;
+
+        @include small {
+            width: 280px;
+        }
+
+        .lnr {
+            @include small {
+                left: unset;
+                right: 25px;
+            }
+        }
+    }
+
+    .link-li {
+        margin-left: 0;
+        margin-right: 22px;
+
+        &:last-of-type {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+html[dir="ltr"] .products-ul {
+    right: unset;
+    left: -22px;
+    width: 180px;
+
+    .link-li {
+        margin: 0;
+        margin-top: 3px;
+    }
+
+    &::before {
+        right: unset;
+        left: 21px;
+
     }
 }

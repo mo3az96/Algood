@@ -31,6 +31,13 @@
         padding: 0 32px;
         font-size: 14px;
         color: #a1a1a1;
+        text-align: right;
+
+        &::placeholder {
+            font-size: 14px;
+            color: #a1a1a1;
+            text-align: right;
+        }
 
         @include mobile {
             width: 100%;
@@ -105,10 +112,12 @@
         font-family: itc-md;
         color: #cccccc;
         font-size: 16px;
+        text-align: right;
 
         &::placeholder {
             color: #cccccc;
             font-size: 16px;
+            text-align: right;
         }
 
         &:focus {
@@ -175,6 +184,52 @@
                 -webkit-transform: scaleX(1);
                 transform: scaleX(1)
             }
+        }
+    }
+}
+
+html[dir="ltr"] .search {
+    left: unset;
+    right: 67px;
+
+    @include mobile {
+        left: unset;
+        left: 0;
+        width: 100%;
+    }
+
+    .search-input {
+        text-align: left;
+
+        &::placeholder {
+            text-align: left;
+        }
+    }
+
+    .searchbtn {
+        left: unset;
+        right: 20px;
+    }
+}
+
+html[dir="ltr"] .newsletter-sec {
+
+    .newsletter-input {
+        text-align: left;
+
+        &::placeholder {
+
+            text-align: left;
+        }
+    }
+
+    .newsletter-btn {
+        right: 15px;
+        left: unset;
+
+
+        &::after {
+            content: "\e87a";
         }
     }
 }

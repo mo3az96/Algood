@@ -123,3 +123,42 @@
         }
     }
 }
+
+
+html[dir="ltr"] .header-sec {
+
+    .lang {
+        left: unset;
+        right: 0;
+    }
+
+    .mo-user-nav {
+        width: 365px;
+
+        @include small {
+            width: 100%;
+        }
+    }
+
+    .mo-user-icon {
+        margin-right: 0;
+        margin-left: 28px;
+
+        &:first-of-type {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+
+    .mo-log-icon {
+        .log {
+            margin-right: 0;
+            margin-left: 8px;
+        }
+    }
+
+    .mo-search-icon {
+        margin-right: 0 !important;
+        margin-left: 28px !important;
+    }
+}
