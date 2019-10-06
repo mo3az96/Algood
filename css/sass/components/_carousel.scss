@@ -1,6 +1,7 @@
 .main-slider-sec {
     margin-top: 24px;
 
+
     .owl-dots {
         position: absolute;
         bottom: 45px;
@@ -40,6 +41,10 @@
 
     .owl-stage-outer {
         border-radius: 20px;
+
+        @include mobile {
+            border-radius: 5px;
+        }
     }
 
     .item {
@@ -49,9 +54,18 @@
         align-items: center;
         justify-content: center;
 
+        @include mobile {
+            border-radius: 5px;
+        }
+
+
         img {
             border-radius: 20px;
             height: 100%;
+
+            @include mobile {
+                border-radius: 5px;
+            }
         }
     }
 }

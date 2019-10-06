@@ -618,6 +618,11 @@ html[dir=ltr] .products-ul::before {
 .main-slider-sec .owl-stage-outer {
   border-radius: 20px;
 }
+@media (max-width: 767px) {
+  .main-slider-sec .owl-stage-outer {
+    border-radius: 5px;
+  }
+}
 .main-slider-sec .item {
   border-radius: 20px;
   max-height: 450px;
@@ -625,9 +630,19 @@ html[dir=ltr] .products-ul::before {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 767px) {
+  .main-slider-sec .item {
+    border-radius: 5px;
+  }
+}
 .main-slider-sec .item img {
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 767px) {
+  .main-slider-sec .item img {
+    border-radius: 5px;
+  }
 }
 
 .cats-sec .owl-stage-outer {

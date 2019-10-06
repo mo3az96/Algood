@@ -38,6 +38,7 @@ $(document).ready(function () {
     // Main Slider
     $('.main-slider').owlCarousel({
         items: 1,
+        margin: 10,
         autoplay: false,
         rtl: document.dir == 'rtl' ? true : false,
         loop: false,
@@ -123,7 +124,7 @@ $(document).ready(function () {
         $(".products-ul").addClass("mopanel");
         $(".nav-foot-header").addClass("moaccordion");
         $(".nav-foot").addClass("mopanel");
-        // $(".slider-cont").removeClass("container");
+        $(".slider-cont").removeClass("container");
     }
 
     // Accordion
