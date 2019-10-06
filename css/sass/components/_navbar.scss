@@ -67,6 +67,8 @@
     }
 
     .products-li {
+        cursor: pointer;
+
         &:hover {
             .products-ul {
                 visibility: visible;
@@ -112,6 +114,7 @@
     visibility: hidden;
     opacity: 0;
     @include transition(all 0.3s ease-in-out);
+    z-index: 999;
 
     @include small {
         position: static;

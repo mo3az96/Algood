@@ -23,9 +23,14 @@
         position: absolute;
         font-family: itc-md;
         text-transform: uppercase;
+        @include transition(all 0.3s ease-in-out);
 
         @include small {
             display: none;
+        }
+
+        &:hover {
+            color: $seccolor;
         }
     }
 
@@ -86,6 +91,7 @@
     .mo-search-icon {
         position: relative;
         margin-right: 28px !important;
+        z-index: 9;
 
         &::before {
             content: "\e86f";

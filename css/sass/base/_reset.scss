@@ -1,6 +1,5 @@
 body {
     font-family: itc;
-    height: 5000px;
 
     &::-webkit-scrollbar {
         background-color: #f7f7f7;
@@ -35,4 +34,16 @@ html {
     &:focus {
         text-decoration: none;
     }
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+    opacity: 0;
+    z-index: 5;
+    display: none;
 }
