@@ -17,10 +17,12 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
+        position: relative;
+        z-index: 8;
 
         @include small {
             flex-direction: column;
-            z-index: 999;
+            z-index: 999 !important;
             position: absolute;
             width: 280px;
             height: 100%;
@@ -222,4 +224,8 @@ html[dir="ltr"] .products-ul {
         left: 21px;
 
     }
+}
+
+.fix-z-index {
+    z-index: 0 !important;
 }

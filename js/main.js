@@ -5,12 +5,14 @@ $(document).ready(function () {
         $(".search").fadeToggle(500);
         $(".overlay").toggle();
         $('.search-input').focus();
+        $('.nav-links').toggleClass("fix-z-index");
     });
     $('.overlay').click(function () {
         $(".overlay").toggle();
         $('.mo-search-icon').toggleClass("search-open");
         $(".search").fadeToggle(500);
         $('.search-input').focus();
+        $('.nav-links').toggleClass("fix-z-index");
     });
     // Side Menu
     $('.mo-menu-icon').click(function () {

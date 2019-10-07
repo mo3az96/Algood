@@ -388,11 +388,13 @@ html[dir=ltr] .newsletter-sec .newsletter-btn::after {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
+  z-index: 8;
 }
 @media (max-width: 991px) {
   .header-sec .nav-links {
     flex-direction: column;
-    z-index: 999;
+    z-index: 999 !important;
     position: absolute;
     width: 280px;
     height: 100%;
@@ -582,6 +584,10 @@ html[dir=ltr] .products-ul .link-li {
 html[dir=ltr] .products-ul::before {
   right: unset;
   left: 21px;
+}
+
+.fix-z-index {
+  z-index: 0 !important;
 }
 
 .main-slider-sec {
@@ -1140,6 +1146,7 @@ html[dir=ltr] .moaccordion:after {
   position: relative;
   align-items: center;
   justify-content: flex-end;
+  z-index: 9;
 }
 @media (max-width: 991px) {
   .header-sec .mo-user-nav {
