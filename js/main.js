@@ -129,6 +129,7 @@ $(document).ready(function () {
 
     // Accordion
     var acc = document.getElementsByClassName("moaccordion");
+    var pan = document.getElementsByClassName("mopanel");
     var i;
 
     for (i = 0; i < acc.length; i++) {

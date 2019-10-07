@@ -165,6 +165,10 @@
     .nav-link {
         font-size: 14px;
         font-family: itc;
+
+        @include small {
+            font-size: 16px;
+        }
     }
 }
 
