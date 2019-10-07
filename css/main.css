@@ -469,6 +469,7 @@ html[dir=ltr] .newsletter-sec .newsletter-btn::after {
 }
 
 .products-ul {
+  width: 169px;
   right: -22px;
   border-radius: 8px;
   position: absolute;
