@@ -631,9 +631,17 @@ html[dir=ltr] .products-ul::before {
   align-items: center;
   justify-content: center;
 }
+.main-slider-sec .item a {
+  border-radius: 20px;
+}
 @media (max-width: 767px) {
   .main-slider-sec .item {
     border-radius: 5px;
+    max-height: none;
+    width: 100%;
+  }
+  .main-slider-sec .item a {
+    width: 100%;
   }
 }
 .main-slider-sec .item img {
@@ -643,6 +651,8 @@ html[dir=ltr] .products-ul::before {
 @media (max-width: 767px) {
   .main-slider-sec .item img {
     border-radius: 5px;
+    height: auto;
+    width: 100%;
   }
 }
 

@@ -41,8 +41,7 @@ $(document).ready(function () {
         margin: 10,
         autoplay: false,
         rtl: document.dir == 'rtl' ? true : false,
-        loop: false,
-        rewind: true,
+        loop: true,
         nav: false,
         dots: true,
         navText: ["<span class='lnr lnr-chevron-right'></span>", "<span class='lnr lnr-chevron-left'></span>"],
@@ -124,7 +123,8 @@ $(document).ready(function () {
         $(".products-ul").addClass("mopanel");
         $(".nav-foot-header").addClass("moaccordion");
         $(".nav-foot").addClass("mopanel");
-        //$(".slider-cont").removeClass("container");
+        // $(".slider-cont").removeClass("container");
+        // $(".slider-cont").addClass("container-fluid");
     }
 
     // Accordion
